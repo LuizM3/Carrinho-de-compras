@@ -1,16 +1,18 @@
-@use "../style/variaveis.scss" as variaveis;
+@use "../../style/variaveis" as variaveis;
 
 #header {
+  position: fixed;
+  top: 0;
   background-color: variaveis.$third-color;
   
-  font-size: 16px;
+  font-size: 1em;
   font-family: variaveis.$primary-font;
 
   align-items: center;
   grid-auto-flow: column;
   grid-template-columns: 2fr 7fr 2fr;
   grid-template-areas: "l lk lc";
-  height: 90px;
+  height: 6.5em;
   width: 100%;
 
   #logo {
@@ -64,4 +66,9 @@
 svg{
     width: 20px;
     height: 20px;
+}
+
+#shopping-cart{
+  width: 5em;
+  height: 5em;
 }

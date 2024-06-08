@@ -1,0 +1,53 @@
+@use "../../style/variaveis" as variaveis;
+
+.logo{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.logoPrinc{
+    width: 5em;
+    height: 5em;
+}
+
+p {
+  margin: 0;
+
+}
+
+.titulo {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 8em;
+
+  background-color: variaveis.$fourth-color;
+  color: variaveis.$second-color;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.links{
+    font-size: 0.85em;
+    row-gap: 0.7em;
+}
+
+.grupo{
+    row-gap: 1em;
+}
+
+.centro {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#logos{
+    grid-auto-flow: column;
+    column-gap: 1em;
+}
