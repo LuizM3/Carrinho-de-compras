@@ -1,0 +1,67 @@
+@use "../style/variaveis.scss" as variaveis;
+
+#header {
+  background-color: variaveis.$third-color;
+  
+  font-size: 16px;
+  font-family: variaveis.$primary-font;
+
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 7fr 2fr;
+  grid-template-areas: "l lk lc";
+  height: 90px;
+  width: 100%;
+
+  #logo {
+    grid-area: l;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  #links{
+    grid-area: lk;
+
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 4fr 4fr 4fr 4fr 4fr 4fr;
+    grid-template-areas: ". h g p s .";
+    
+    #dash{
+        grid-area: g;
+    }
+    #home{
+        grid-area: h;
+    }
+    #sobre{
+        grid-area: s;
+    }
+    #prod{
+        grid-area: p;
+    }
+  }
+
+  #loginCadastro {
+    grid-area: lc;
+  }
+}
+
+.link{
+    color: variaveis.$primary-color;
+}
+
+#login{
+    color: black !important;
+    grid-auto-flow: column;
+}
+
+.centro{
+    display: grid;
+    justify-content: center;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+}

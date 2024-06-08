@@ -1,13 +1,18 @@
+import Header from './_Componentes/header';
+import "./style.scss";
 
 export const metadata = {
   title: "Carrinho de Compras",
   description: "Adicione itens no carrinho e veja o preço final.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children}) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }

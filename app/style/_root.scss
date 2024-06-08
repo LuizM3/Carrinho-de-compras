@@ -1,0 +1,17 @@
+@use "./_variaveis.scss" as variaveis;
+
+a {
+  text-decoration: none;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: variaveis.$primary-font;
+
+  body {
+    background-color: variaveis.$second-color;
+    margin: 0px;
+    height: 10rem;
+  }
+}
