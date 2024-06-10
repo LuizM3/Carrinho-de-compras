@@ -1,0 +1,25 @@
+@use "../../style/variaveis" as variaveis;
+
+#parteSuperior {
+  width: 100%;
+  height: 29em;
+  grid-template-rows: 6fr 1fr;
+  background-image: url("./foto.png");
+
+  div {
+    h1 {
+      color: variaveis.$fourth-color;
+    }
+
+    a {
+      background-color: variaveis.$fifth-color;
+      border: 0.15em solid variaveis.$fourth-color;
+      border-radius: 1em;
+      height: 2em;
+      font-family: variaveis.$primary-font;
+      font-size: 1.05em;
+      color: variaveis.$fourth-color;
+      width: 12.5em;
+    }
+  }
+}

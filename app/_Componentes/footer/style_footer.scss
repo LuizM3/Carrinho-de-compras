@@ -29,7 +29,7 @@ p {
   background-color: variaveis.$fourth-color;
   color: variaveis.$second-color;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 3fr 3fr 2fr;
 }
 
 .links{
