@@ -10,16 +10,48 @@
     h1 {
       color: variaveis.$fourth-color;
     }
-
-    a {
-      background-color: variaveis.$fifth-color;
-      border: 0.15em solid variaveis.$fourth-color;
-      border-radius: 1em;
-      height: 2em;
-      font-family: variaveis.$primary-font;
-      font-size: 1.05em;
-      color: variaveis.$fourth-color;
-      width: 12.5em;
-    }
   }
 }
+
+#parteBaixa {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 29em;
+  grid-auto-flow: column;
+  background-color: variaveis.$third-color;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "i b";
+
+  #imagemParteBaixa {
+    width: 35em;
+    height: 20em;
+    background-color: red;
+    grid-area: i;
+  }
+
+  #blocoDeTextosParteBaixa {
+    grid-template-rows: 2fr 1fr;
+    grid-area: b;
+
+    #textoParteBaixa {
+      text-align: center;
+    }
+
+  }
+
+}
+
+.botoesRedirecionadores {
+  background-color: variaveis.$fifth-color;
+  border: 0.15em solid variaveis.$fourth-color;
+  border-radius: 1em;
+  height: 2em;
+  font-family: variaveis.$primary-font;
+  font-size: 1.05em;
+  color: variaveis.$fourth-color;
+  width: 12.5em;
+}
+
+
