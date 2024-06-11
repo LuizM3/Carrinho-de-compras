@@ -12,7 +12,7 @@
   grid-auto-flow: column;
   grid-template-columns: 2fr 7fr 2fr;
   grid-template-areas: "l lk lc";
-  height: 6.5em;
+  height: 5em;
   width: 100%;
 
   #logo {
@@ -58,14 +58,12 @@
     grid-auto-flow: column;
 }
 
-
-
 svg{
-    width: 20px;
-    height: 20px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 #shoppingcart{
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }

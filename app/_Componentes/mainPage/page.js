@@ -17,17 +17,24 @@ export default function MainPage() {
       </div>
 
       <div id="parteBaixa">
-        <div id="imagemParteBaixa">Imagem</div>
+        <div className="centro">
+          <div id="imagemParteBaixa" className="centro"></div>
+        </div>
 
         <div id="blocoDeTextosParteBaixa" className="centro">
           <div id="textoParteBaixa" className="centro">
-            <h1 className="centro">
-              Acesse seu dashboard e<br /> veja seus produtos
-            </h1>
-            <div className="centro">
-              <Link href="/dashboard" className="centro botoesRedirecionadores">
-                Ir para aba Dashboard
-              </Link>
+            <div id="divDentroDeVariasDivs">
+              <h1 className="centro">
+                Acesse seu dashboard e<br /> veja seus produtos
+              </h1>
+              <div>
+                <Link
+                  href="/dashboard"
+                  className="centro botoesRedirecionadores"
+                >
+                  Ir para aba Dashboard
+                </Link>
+              </div>
             </div>
           </div>
         </div>
