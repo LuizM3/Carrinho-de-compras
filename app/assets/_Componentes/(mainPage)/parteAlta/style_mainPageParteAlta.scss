@@ -1,0 +1,28 @@
+@use "../../../../style/variaveis" as variaveis;
+
+#parteSuperior {
+  width: 100%;
+  height: 31em;
+  grid-template-rows: 6fr 1fr;
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/20/20/02/supermarket-4951863_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  div {
+    h1 {
+      color: variaveis.$second-color;
+    }
+  }
+}
+
+.botoesRedirecionadores {
+    height: 2em;
+    width: 12.5em;
+    color: variaveis.$fourth-color;
+    background-color: variaveis.$fifth-color;
+    font-family: variaveis.$primary-font;
+    border: 0.15em solid variaveis.$fourth-color;
+    border-radius: 1em;
+    font-size: 1.05em;
+  }
