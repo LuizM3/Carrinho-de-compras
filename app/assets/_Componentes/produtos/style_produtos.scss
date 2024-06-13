@@ -13,22 +13,41 @@
 
 .produto {
   width: 10em;
-  height: 15em;
+  height: 17em;
   background-color: variaveis.$third-color;
   border: 0.2em solid  variaveis.$fourth-color;
   border-radius: 1em;
   align-items: center;
 
   #divSeparadaDoProduto {
-    width: 9em;
-    height: 13em;
+    width: 10em;
+    height: 17em;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+    #divImgProduto{
+      width: 7.8em;
+      height: 7.8em;
+    }
 
     #textoDosProdutos{
         align-items: center;
+        height: 8em;
+        grid-template-rows: 1fr 1fr 1fr 3fr;
 
         div{
             display: grid;
             justify-content: center;
+        }
+
+
+        .botoes{
+          div{
+            grid-auto-flow: column;
+            justify-content: space-around;
+            height: 2.6em;
+            align-items: center;
+          }
         }
     }
 
